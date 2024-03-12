@@ -1,20 +1,22 @@
-# Ignorar archivos generados por TypeScript
-dist/
+# Node.js dependencies
 node_modules/
 
-# Ignorar archivos de configuración de TypeScript
-tsconfig.json
-tsconfig.*.json
+# Compiled JavaScript files
+dist/
 
-# Ignorar cualquier archivo de respaldo creado por tu editor
-*~
+# TypeScript build directory
+*.tsbuildinfo
 
-# Ignorar archivos de registro
+# VS Code configurations
+.vscode/
+
+# Mac OS metadata files
+.DS_Store
+
+# Log files
 *.log
+npm-debug.log*
 
-# Ignorar archivos de ambiente de desarrollo local
+# Environment variables
 .env
 
-# Ignorar archivos de dependencias generados por npm/yarn
-package-lock.json
-yarn.lock
