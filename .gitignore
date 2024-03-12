@@ -1,0 +1,20 @@
+# Ignorar archivos generados por TypeScript
+dist/
+node_modules/
+
+# Ignorar archivos de configuración de TypeScript
+tsconfig.json
+tsconfig.*.json
+
+# Ignorar cualquier archivo de respaldo creado por tu editor
+*~
+
+# Ignorar archivos de registro
+*.log
+
+# Ignorar archivos de ambiente de desarrollo local
+.env
+
+# Ignorar archivos de dependencias generados por npm/yarn
+package-lock.json
+yarn.lock
