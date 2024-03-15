@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-  # pull_request:
-  #   branches:
-  #     - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -30,10 +30,10 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Build Docker image
-        run: docker build -t luisrivas-project .
+      # - name: Build Docker image
+      #   run: docker build -t luisrivas-project .
 
-      - name: Push Docker image to registry
-        run: |
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push luisrivas-project
+      # - name: Push Docker image to registry
+      #   run: |
+      #     docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+      #     docker push luisrivas-project
