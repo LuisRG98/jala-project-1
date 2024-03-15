@@ -38,6 +38,3 @@ jobs:
 
       - name: Push Docker image to GitHub Packages
         run: docker push docker.pkg.github.com/luisrg98/jala-project-1/luisrivas-project
-
-      -name: Pull docker image locally
-        run: docker pull ghcr.io/luisrg98/jala-project-1/luisrivas-project:latest
