@@ -27,11 +27,11 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
-      - name: Run tests
+      - name: Run all tests
         run: npm test
 
       - name: Login to GitHub Packages
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+        run: echo "${{ secrets.JALA }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker image
         run: docker build -t docker.pkg.github.com/luisrg98/jala-project-1/luisrivas-project .
